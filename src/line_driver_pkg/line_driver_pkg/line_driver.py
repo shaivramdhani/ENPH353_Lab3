@@ -64,22 +64,6 @@ class LineFollower(Node):
 
             move.angular.z = -Kp * error
 
-            cv2.circle(
-                cv_image,
-                (middle, row),
-                10,
-                (0, 0, 255),
-                -1
-            )
-
-            cv2.circle(
-                cv_image,
-                (int(image_center), row),
-                10,
-                (255, 0, 0),
-                -1
-            )
-
         else:
             move.linear.x = 0.0
             move.angular.z = 0.0
